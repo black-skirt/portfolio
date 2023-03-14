@@ -1,0 +1,410 @@
+@charset "utf-8";
+
+/*-------------------------------------------------
+Common Style Sheet
+Version : 1.1
+Author :  Da-Vin Ha
+Create date : 2023. 2. 16. Da-Vin Ha
+-------------------------------------------------*/
+
+/* **************************************** *
+ * FONT
+ * **************************************** */
+@font-face {
+  font-family: 'Geometos';
+  src: url('fonts/Geometos.eot');
+  src: url('fonts/Geometos.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Geometos.woff2') format('woff2'),
+    url('fonts/Geometos.woff') format('woff'),
+    url('fonts/Geometos.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* **************************************** *
+ * Common Style
+ * **************************************** */
+* {
+  font-family: 'Pretendard', sans-serif, 맑은고딕, Malgun Gothic, '돋움', Dotum,
+    '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', sans-serif;
+  box-sizing: border-box;
+  -webkit-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+  line-height: 1.4;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  padding: 0;
+  margin: 0;
+  /* word-wrap: break-word; */
+  word-break: keep-all;
+  color: #2b2b2b;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-family: 'Pretendard', sans-serif, 맑은고딕, Malgun Gothic, '돋움', Dotum,
+    '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+table {
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-weight: normal;
+  font-style: normal;
+}
+strong {
+  font-weight: bold;
+}
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+q:before,
+q:after {
+  content: '';
+}
+abbr,
+acronym {
+  border: 0;
+}
+caption,
+legend {
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+}
+textarea {
+  resize: none;
+}
+textarea.vert {
+  resize: vertical;
+}
+img {
+  max-width: 100%;
+}
+
+::selection {
+  background: #fee5e1;
+  color: #381f02;
+}
+::-moz-selection {
+  background: #fee5e1;
+  color: #381f02;
+}
+
+/* accessibility */
+#accessibility {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+#accessibility li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+#accessibility a {
+  overflow: hidden;
+  display: block;
+  width: 1px;
+  height: 1px;
+  margin-bottom: -1px;
+  color: #444;
+  font-size: 0;
+  text-decoration: none;
+}
+#accessibility a:active,
+#accessibility a:focus {
+  width: 100%;
+  height: auto;
+  padding: 5px 0;
+  background: #303030;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* 여백 */
+.mt0 {
+  margin-top: 0 !important;
+}
+.mb0 {
+  margin-bottom: 0 !important;
+}
+
+/* 텍스트 */
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text_blue {
+  color: #008bd5 !important;
+}
+.tit_new {
+  background: url(../images/common/ico_new.png) no-repeat;
+  background-position: right;
+  padding-right: 30px;
+} /*NEW 아이콘*/
+.contents .text {
+  font-size: 19px;
+  line-height: 2.1;
+  letter-spacing: -0.045em;
+  color: #777;
+  margin-bottom: 15px;
+}
+.contents .text-bold {
+  color: #666;
+  font-weight: 700;
+}
+
+/* 버튼 */
+.btn {
+  display: inline-block;
+  padding: 7px 18px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.95em;
+  border-radius: 1px;
+  letter-spacing: 0;
+} /* 보통 버튼사이즈 */
+.l_btn {
+  display: inline-black;
+  padding: 13px 45px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1em;
+  border-radius: 1px;
+  letter-spacing: 0;
+} /* 큰 버튼사이즈 */
+.s_btn {
+  display: inline-block;
+  padding: 4px 15px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.88em !important;
+  border-radius: 1px;
+  letter-spacing: 0;
+} /* 작은 버튼사이즈 */
+.btn:hover,
+.btn:focus,
+.btn:active,
+.s_btn:hover,
+.s_btn:focus,
+.s_btn:active,
+.l_btn:hover,
+.l_btn:focus,
+.l_btn:active {
+  color: #fff;
+}
+.btn_navy {
+  background: #3c4c6f;
+}
+.btn_navy:hover,
+.btn_navy:focus,
+.btn_navy:active {
+  background: #223557;
+}
+.btn_gray {
+  background: #929fb8;
+}
+.btn_gray:hover,
+.btn_gray:focus,
+.btn_gray:active {
+  background: #78859d;
+}
+.btn_black {
+  background: #111;
+}
+.btn_black:hover,
+.btn_black:focus,
+.btn_black:active {
+  background: #2f2f2f;
+}
+.btn_blue {
+  background: #005aae;
+}
+.btn_blue:hover,
+.btn_blue:focus,
+.btn_blue:active {
+  background: #004394;
+}
+.btn_skyblue {
+  background: #289be0;
+}
+.btn_skyblue:hover,
+.btn_skyblue:focus,
+.btn_skyblue:active {
+  background: #0086c9;
+}
+.btn_pink {
+  background: #e42c53;
+}
+.btn_pink:hover,
+.btn_pink:focus,
+.btn_pink:active {
+  background: #cd0043;
+}
+.btn_white {
+  background: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+.btn_white:hover,
+.btn_white:focus,
+.btn_white:active {
+  background: #eaeaea;
+  color: #222;
+  border: 1px solid #bbb;
+}
+
+/* 리스트 */
+.ul-list-1 li {
+  font-size: 17px;
+  color: #666;
+  letter-spacing: -0.03em;
+  line-height: 1.8;
+  position: relative;
+  padding-left: 10px;
+}
+.ul-list-1 li:before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  background: #777;
+  position: absolute;
+  left: 0;
+  top: 12px;
+}
+
+/* TOP */
+.cntTop-wrap {
+  position: fixed;
+  right: 20px;
+  bottom: 17%;
+  z-index: 100;
+}
+.cntTop-wrap #cntTop {
+}
+.cntTop-wrap #cntTop:hover,
+.cntTop-wrap #cntTop:focus,
+.cntTop-wrap #cntTop:active {
+  opacity: 0.66;
+}
+
+/* hidden */
+.sr_only {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* **************************************** *
+ * Mobile
+ * **************************************** */
+@media (max-width: 767px) {
+  .mt0 {
+    margin-top: 0 !important;
+  }
+  .mb0 {
+    margin-bottom: 0 !important;
+  }
+
+  .cntTop-wrap #cntTop {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    letter-spacing: 1px;
+    font-size: 9.5px;
+  }
+}
+body {
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

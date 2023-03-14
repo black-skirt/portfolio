@@ -1,0 +1,292 @@
+html {
+  font-size: 8px;
+  /* root-font-size */
+  background: #0b0b0b;
+}
+body {
+  position: relative;
+}
+h1 {
+  color: #e0e0e0;
+  font-weight: 400;
+  font-size: 40px;
+}
+h2 {
+  font-family: 'Geometos', 'Pretendard', sans-serif, 맑은고딕, Malgun Gothic,
+    '돋움', Dotum, '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', sans-serif;
+  font-size: 24px;
+  color: #ededed;
+}
+h3 {
+}
+/* header area */
+nav {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #1c1c1c;
+  padding: 2rem 6rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 16px;
+  text-transform: uppercase;
+  gap: 3rem;
+  align-items: center;
+}
+
+nav ul li {
+  font-family: 'Geometos', 'Pretendard', sans-serif, 맑은고딕, Malgun Gothic,
+    '돋움', Dotum, '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', sans-serif;
+  color: #444444;
+}
+
+nav ul li.on {
+  color: #ededed;
+  position: relative;
+}
+
+nav ul li.on::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: #ededed;
+  transform: translate(-50%, 0);
+  border-radius: 999px;
+}
+
+/* main */
+article.main {
+  width: 100%;
+  height: 110vh;
+  position: relative;
+  background-attachment: fixed;
+  background-image: url(../images/example.jpg);
+}
+
+article.main .main-contents {
+  position: sticky;
+  left: 50%;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  /* overflow: hidden; */
+  padding: 16rem 0;
+}
+article.main .main-contents .main-title {
+  text-align: center;
+}
+
+article.main .main-contents .description {
+  text-align: center;
+}
+.description {
+  color: #8a8a8a;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+/* project */
+article.project {
+  padding: 15rem 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+h2.article-title {
+  font-size: 24px;
+  font-family: 'Geometos', 'Pretendard', sans-serif, 맑은고딕, Malgun Gothic,
+    '돋움', Dotum, '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', sans-serif;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff10;
+  height: 6rem;
+}
+
+article.project ul.project-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, minmax(100px, auto));
+  gap: 12rem 5rem;
+}
+
+article.project ul.project-body .project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+article.project ul.project-body .project-list .project-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: start; */
+}
+article.project ul.project-body .project-list h3 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+article.project ul.project-body .project-list .project-date {
+  font-size: 14px;
+  color: #444444;
+}
+
+article.project ul.project-body .project-list .description {
+  font-size: 16px;
+  font-weight: 400;
+  color: #626262;
+}
+
+article.project ul.project-body .project-list .chip-body {
+  margin-top: 8px;
+}
+.chip-body {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.chip-body .chip-contents {
+  font-size: 16px;
+  padding: 2px 4px;
+  background: #ededed;
+  border: 1px solid #00000045;
+  text-transform: capitalize;
+}
+article.project
+  ul.project-body
+  .project-list
+  ul.chip-body
+  article.project
+  ul.project-body
+  .project-list
+  img {
+  width: 100%;
+}
+
+/* footer */
+footer {
+  font-size: 12px;
+  padding: 3rem 6rem;
+  color: #ffffff20;
+  border-top: 1px solid #ffffff10;
+}
+
+/* 디테일 페이지 */
+section.detail {
+  padding: 0;
+}
+section.detail .hero-img {
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+  background-image: url(../images/example16-9.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.detail .information {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem 6rem 10rem;
+}
+section.detail .metadata {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #ffffff10;
+}
+
+section.detail .information .info {
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+}
+section.detail .information .info .description {
+  width: 70rem;
+}
+section.detail .information .info .tool {
+  font-size: 14px;
+  color: #444444;
+}
+section.detail .information a.visit-site {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 400;
+}
+section.detail .metadata .date {
+  font-family: 'Geometos', 'Pretendard', sans-serif, 맑은고딕, Malgun Gothic,
+    '돋움', Dotum, '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', sans-serif;
+  font-size: 20px;
+  color: #6a6a6a;
+}
+
+section.contents {
+  padding: 10rem 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+section.contents .contents-layout0 {
+  width: calc(100% - 8rem);
+  height: 100vh;
+  background-attachment: fixed;
+  background-image: url(../images/example16-9.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.contents .contents-layout1 {
+  /* width: 100%; */
+}
+
+section.contents .contents-layout1 img {
+  width: 100%;
+}
+
+.contents-layout2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(3, minmax(100px, auto)); */
+  gap: 0rem 6rem;
+}
+section.contents .contents-layout3 {
+  padding: 6rem 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 auto;
+}
+section.contents .contents-layout3 .description {
+  width: 140rem;
+}
+section.contents .contents-layout3 h2 {
+  width: 140rem;
+}
+
+.other-projects {
+  padding: 3rem 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
