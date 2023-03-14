@@ -104,8 +104,17 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#test').load('test.html');
+        /* id 지정을 통해서도 가능합니다. 
+         $("#header").load("header.html #navbar")
+         */
+      });
+    </script>
   </head>
   <body>
+    <div id="test"></div>
     <nav>
       <img src="images/logo.svg" alt="" class="logo" />
       <ul>
@@ -224,7 +233,8 @@
       </ul>
     </article>
     <footer>@2023. KIM SUNG JUN. ALL RIGHTS RESERVED.</footer>
-    <script type="text/javascript" src="js/css3-animate-it.js"></script>
+    <!-- <script type="text/javascript" src="js/css3-animate-it.js"></script> -->
+
     <!-- 애니메이션 효과 js -->
   </body>
 </html>
