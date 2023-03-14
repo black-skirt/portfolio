@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>김성준 | 포트폴리오</title>
@@ -98,28 +98,29 @@
     <link rel="stylesheet" type="text/css" href="css/common.css" />
     <!-- 전체공통 -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <!-- 전체공통 -->
-
+    <!-- 애니메이션 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- script -->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#test').load('test.html');
-        /* id 지정을 통해서도 가능합니다. 
-         $("#header").load("header.html #navbar")
-         */
-      });
-    </script>
   </head>
   <body>
-    <div id="test"></div>
-    <nav>
-      <img src="images/logo.svg" alt="" class="logo" />
+    <nav id="cntTop">
+      <a href="index.html"
+        ><img src="images/logo.svg" alt="로고 이미지" class="logo"
+      /></a>
       <ul>
-        <li class="on">home</li>
-        <li>resume</li>
+        <li>
+          <a href="index.html" class="on">home</a>
+        </li>
+
+        <li>
+          <a href="">resume</a>
+        </li>
       </ul>
     </nav>
     <article class="main">
@@ -133,10 +134,10 @@
     <!-- 프로젝트 -->
     <article class="project">
       <h2 class="article-title">project</h2>
+
       <ul class="project-body">
         <!-- 컨텐츠 구분영역 -->
-        <!-- 컨텐츠 구분영역 -->
-        <a href="" class="project-list">
+        <a href="portfolio.html" class="project-list" data-id="0">
           <img src="images/example-item.jpg" alt="portfolio1" />
           <div class="project-title">
             <h3>proejct-title</h3>
@@ -155,7 +156,26 @@
           </ul>
         </a>
         <!-- 컨텐츠 구분영역 -->
-        <a href="" class="project-list">
+        <a href="portfolio.html" class="project-list" data-id="1">
+          <img src="images/example-item.jpg" alt="portfolio1" />
+          <div class="project-title">
+            <h3>proejct-title</h3>
+            <div class="project-date">2021</div>
+          </div>
+          <div class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            doloremque repellat impedit qui harum fugit consequatur ad commodi
+            necessitatibus cumque natus accusamus tempora, laborum incidunt.
+            Aspernatur sequi soluta repellendus et.
+          </div>
+          <ul class="chip-body animatedParent" data-sequence="500">
+            <li class="chip-contents">chip</li>
+            <li class="chip-contents">chip</li>
+            <li class="chip-contents">chip</li>
+          </ul>
+        </a>
+        <!-- 컨텐츠 구분영역 -->
+        <a href="portfolio.html" class="project-list" data-id="2">
           <img src="images/example-item.jpg" alt="portfolio1" />
           <div class="project-title">
             <h3>proejct-title</h3>
@@ -174,7 +194,7 @@
           </ul>
         </a>
         <!-- 컨텐츠 구분영역 -->
-        <a href="" class="project-list">
+        <a href="portfolio.html" class="project-list" data-id="3">
           <img src="images/example-item.jpg" alt="portfolio1" />
           <div class="project-title">
             <h3>proejct-title</h3>
@@ -193,7 +213,7 @@
           </ul>
         </a>
         <!-- 컨텐츠 구분영역 -->
-        <a href="" class="project-list">
+        <a href="portfolio.html" class="project-list" data-id="4">
           <img src="images/example-item.jpg" alt="portfolio1" />
           <div class="project-title">
             <h3>proejct-title</h3>
@@ -212,7 +232,26 @@
           </ul>
         </a>
         <!-- 컨텐츠 구분영역 -->
-        <a href="" class="project-list">
+        <a href="portfolio.html" class="project-list" data-id="5">
+          <img src="images/example-item.jpg" alt="portfolio1" />
+          <div class="project-title">
+            <h3>proejct-title</h3>
+            <div class="project-date">2021</div>
+          </div>
+          <div class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            doloremque repellat impedit qui harum fugit consequatur ad commodi
+            necessitatibus cumque natus accusamus tempora, laborum incidunt.
+            Aspernatur sequi soluta repellendus et.
+          </div>
+          <ul class="chip-body">
+            <li class="chip-contents">chip</li>
+            <li class="chip-contents">chip</li>
+            <li class="chip-contents">chip</li>
+          </ul>
+        </a>
+        <!-- 컨텐츠 구분영역 -->
+        <a href="portfolio.html" class="project-list" data-id="6">
           <img src="images/example-item.jpg" alt="portfolio1" />
           <div class="project-title">
             <h3>proejct-title</h3>
@@ -233,7 +272,7 @@
       </ul>
     </article>
     <footer>@2023. KIM SUNG JUN. ALL RIGHTS RESERVED.</footer>
-    <!-- <script type="text/javascript" src="js/css3-animate-it.js"></script> -->
+    <script type="text/javascript" src="js/css3-animate-it.js"></script>
 
     <!-- 애니메이션 효과 js -->
   </body>

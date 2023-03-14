@@ -41,21 +41,24 @@ nav ul {
   align-items: center;
 }
 
-nav ul li {
+nav ul li a {
   font-family: 'Geometos', 'Pretendard', sans-serif, 맑은고딕, Malgun Gothic,
     '돋움', Dotum, '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', sans-serif;
-  color: #444444;
+  color: #8a8a8a;
 }
 
-nav ul li.on {
+nav ul li a.on {
   color: #ededed;
   position: relative;
 }
+nav ul li a:hover {
+  color: #ededed;
+}
 
-nav ul li.on::after {
+nav ul li a.on::after {
   content: '';
   position: absolute;
-  top: -5px;
+  top: -8px;
   left: 50%;
   width: 4px;
   height: 4px;

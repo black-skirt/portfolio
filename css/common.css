@@ -408,3 +408,7 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+#cntTop.on {
+  background: #0b0b0b;
+}
