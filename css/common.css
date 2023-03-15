@@ -364,8 +364,8 @@ img {
   bottom: 17%;
   z-index: 100;
 }
-.cntTop-wrap #cntTop {
-}
+/* .cntTop-wrap #cntTop {
+} */
 .cntTop-wrap #cntTop:hover,
 .cntTop-wrap #cntTop:focus,
 .cntTop-wrap #cntTop:active {

@@ -9,7 +9,7 @@ body {
 h1 {
   color: #e0e0e0;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 32px;
 }
 h2 {
   font-family: 'Geometos', 'Pretendard', sans-serif, 맑은고딕, Malgun Gothic,
@@ -17,9 +17,9 @@ h2 {
   font-size: 24px;
   color: #ededed;
 }
-h3 {
+/* h3 {
 }
-/* header area */
+header area */
 nav {
   position: fixed;
   z-index: 1;
@@ -37,7 +37,7 @@ nav ul {
   justify-content: flex-start;
   font-size: 16px;
   text-transform: uppercase;
-  gap: 3rem;
+  gap: 24px;
   align-items: center;
 }
 
@@ -115,6 +115,7 @@ h2.article-title {
   color: #ffffff;
   border-bottom: 1px solid #ffffff10;
   height: 6rem;
+  min-height: 32px;
 }
 
 article.project ul.project-body {
@@ -150,6 +151,7 @@ article.project ul.project-body .project-list .description {
   font-size: 16px;
   font-weight: 400;
   color: #626262;
+  word-break: keep-all;
 }
 
 article.project ul.project-body .project-list .chip-body {
@@ -181,8 +183,9 @@ article.project
 /* footer */
 footer {
   font-size: 12px;
-  padding: 3rem 6rem;
-  color: #ffffff20;
+  padding: 0 6rem;
+  line-height: 6;
+  color: #ffffff30;
   border-top: 1px solid #ffffff10;
 }
 
@@ -193,6 +196,7 @@ section.detail {
 section.detail .hero-img {
   width: 100%;
   height: 100vh;
+  background-position: c;
   background-attachment: fixed;
   background-image: url(../images/example16-9.jpg);
   background-repeat: no-repeat;
@@ -254,10 +258,6 @@ section.contents .contents-layout0 {
   background-size: cover;
 }
 
-section.contents .contents-layout1 {
-  /* width: 100%; */
-}
-
 section.contents .contents-layout1 img {
   width: 100%;
 }
@@ -292,4 +292,35 @@ section.contents .contents-layout3 h2 {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+}
+
+@media (max-width: 1920px) {
+  html {
+    font-size: 0.416vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  article.main .main-contents .main-title {
+    font-size: 32px;
+  }
+  nav {
+    padding: 12px 24px;
+  }
+  article.project ul.project-body {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24rem 0rem;
+  }
+  article.project {
+    padding: 80px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  article.main .main-contents .main-title {
+    font-size: 22px;
+  }
+  article.main .main-contents .description {
+    font-size: 18px;
+  }
 }
