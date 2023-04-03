@@ -12,10 +12,17 @@ h1 {
   font-size: 32px;
 }
 h2 {
-  font-family: 'Geometos', 'Pretendard', sans-serif, 맑은고딕, Malgun Gothic,
+  font-family:  'Pretendard', sans-serif, 맑은고딕, Malgun Gothic,
     '돋움', Dotum, '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', sans-serif;
   font-size: 24px;
   color: #ededed;
+  font-weight: 500;
+}
+.description {
+  color: #8a8a8a;
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 400;
 }
 /* h3 {
 }
@@ -68,6 +75,9 @@ nav ul li a.on::after {
 }
 
 /* main */
+
+
+
 article.main {
   width: 100%;
   height: 110vh;
@@ -93,11 +103,6 @@ article.main .main-contents .main-title {
 
 article.main .main-contents .description {
   text-align: center;
-}
-.description {
-  color: #8a8a8a;
-  font-size: 20px;
-  line-height: 140%;
 }
 
 /* project */
@@ -240,12 +245,22 @@ section.detail .metadata .date {
   font-size: 20px;
   color: #6a6a6a;
 }
-
-section.contents {
-  padding: 10rem 6rem;
+.contents-body {
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 15rem;
+  padding: 10rem 6rem;
+}
+.divider {
+width: 100%;
+height: 1px;
+background: #ffffff10;
+}
+
+section.contents {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
 
 section.contents .contents-layout0 {
@@ -270,18 +285,18 @@ section.contents .contents-layout1 img {
 }
 section.contents .contents-layout3 {
   padding: 6rem 0;
-
   display: flex;
   flex-direction: column;
   gap: 3rem;
-
-  justify-content: center;
-  align-items: center;
-
-  padding: 0 auto;
+  justify-content:left;
+  align-items:start;
+  
 }
 section.contents .contents-layout3 .description {
   width: 140rem;
+  word-break: keep-all;
+  
+  
 }
 section.contents .contents-layout3 h2 {
   width: 140rem;
