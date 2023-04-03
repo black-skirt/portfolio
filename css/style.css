@@ -12,8 +12,8 @@ h1 {
   font-size: 32px;
 }
 h2 {
-  font-family:  'Pretendard', sans-serif, 맑은고딕, Malgun Gothic,
-    '돋움', Dotum, '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', sans-serif;
+  font-family: 'Pretendard', sans-serif, 맑은고딕, Malgun Gothic, '돋움', Dotum,
+    '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', sans-serif;
   font-size: 24px;
   color: #ededed;
   font-weight: 500;
@@ -75,8 +75,6 @@ nav ul li a.on::after {
 }
 
 /* main */
-
-
 
 article.main {
   width: 100%;
@@ -194,6 +192,11 @@ footer {
   border-top: 1px solid #ffffff10;
 }
 
+/* 디테일 페이지별 스타일 */
+body.visual section.detail .hero-img {
+  background-image: url(../images/visual/hero.jpg);
+}
+
 /* 디테일 페이지 */
 section.detail {
   padding: 0;
@@ -201,7 +204,7 @@ section.detail {
 section.detail .hero-img {
   width: 100%;
   height: 100vh;
-  background-position: c;
+  background-position: center;
   background-attachment: fixed;
   background-image: url(../images/example16-9.jpg);
   background-repeat: no-repeat;
@@ -252,25 +255,31 @@ section.detail .metadata .date {
   padding: 10rem 6rem;
 }
 .divider {
-width: 100%;
-height: 1px;
-background: #ffffff10;
+  width: 100%;
+  height: 1px;
+  background: #ffffff10;
 }
 
 section.contents {
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  padding: 10rem 0;
 }
 
 section.contents .contents-layout0 {
-  width: calc(100% - 8rem);
+  /* width: calc(100% - 8rem); */
   height: 100vh;
   background-attachment: fixed;
   background-image: url(../images/example16-9.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* background layout */
+section.contents.cumulus .contents-layout0 {
+  background-image: url(../images/visual/02.jpg);
 }
 
 section.contents .contents-layout1 img {
@@ -281,22 +290,19 @@ section.contents .contents-layout1 img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   /* grid-template-rows: repeat(3, minmax(100px, auto)); */
-  gap: 0rem 6rem;
+  gap: 0rem 5rem;
 }
 section.contents .contents-layout3 {
-  padding: 6rem 0;
+  /* padding: 6rem 0; */
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  justify-content:left;
-  align-items:start;
-  
+  justify-content: left;
+  align-items: start;
 }
 section.contents .contents-layout3 .description {
   width: 140rem;
   word-break: keep-all;
-  
-  
 }
 section.contents .contents-layout3 h2 {
   width: 140rem;
