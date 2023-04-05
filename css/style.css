@@ -333,8 +333,7 @@ section.contents .contents-layout1 img {
   background: linear-gradient(#fffaee, #ffedd7);
   position: relative;
 }
-.contents-layout2 .img-box.fond img {
-}
+
 .contents-layout2 .img-box img {
   position: absolute;
   top: 50%;
