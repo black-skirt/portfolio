@@ -411,4 +411,6 @@ body {
 
 #cntTop.on {
   background: #0b0b0b;
+  mix-blend-mode: normal;
+  transition: all 0.4s;
 }
