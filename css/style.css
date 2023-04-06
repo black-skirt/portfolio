@@ -8,9 +8,10 @@ body {
 }
 h1 {
   color: #e0e0e0;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 32px;
   text-transform: capitalize;
+  line-height: 1;
 }
 h2 {
   font-family: 'Pretendard', sans-serif, 맑은고딕, Malgun Gothic, '돋움', Dotum,
@@ -37,7 +38,7 @@ nav {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #1c1c1c;
-  padding: 2rem 6rem;
+  padding: 2rem 10rem;
   mix-blend-mode: screen;
   transition: all 0.4s;
   background: #0b0b0b00;
@@ -109,7 +110,7 @@ article.main .main-contents .description {
 
 /* project */
 article.project {
-  padding: 15rem 6rem;
+  padding: 15rem 10rem;
   display: flex;
   flex-direction: column;
   gap: 5rem;
@@ -119,7 +120,7 @@ h2.article-title {
   font-size: 24px;
   font-family: 'Geometos', 'Pretendard', sans-serif, 맑은고딕, Malgun Gothic,
     '돋움', Dotum, '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', sans-serif;
-  color: #ffffff;
+  color: #ededed;
   border-bottom: 1px solid #ffffff10;
   height: 6rem;
   min-height: 48px;
@@ -135,7 +136,7 @@ article.project ul.project-body {
 article.project ul.project-body .project-list {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 12px;
 }
 article.project ul.project-body .project-list img {
   border: 1px solid #ffffff10;
@@ -146,10 +147,11 @@ article.project ul.project-body .project-list .project-title {
   flex-direction: row;
   justify-content: space-between;
   /* align-items: start; */
+  margin-top: 8px;
 }
 article.project ul.project-body .project-list h3 {
-  font-size: 20px;
-  color: #fff;
+  font-size: 24px;
+  color: #ededed;
   font-weight: 600;
 }
 article.project ul.project-body .project-list .project-date {
@@ -160,23 +162,25 @@ article.project ul.project-body .project-list .project-date {
 article.project ul.project-body .project-list .description {
   font-size: 16px;
   font-weight: 400;
-  color: #626262;
+  color: #8a8a8a;
   word-break: keep-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 article.project ul.project-body .project-list .chip-body {
-  margin-top: 8px;
 }
 .chip-body {
   display: flex;
   flex-direction: row;
-  gap: 8px;
+  gap: 12px;
 }
 .chip-body .chip-contents {
-  font-size: 16px;
-  padding: 2px 4px;
-  background: #ededed;
-  border: 1px solid #00000045;
+  font-size: 14px;
+  color: #525252;
   text-transform: capitalize;
 }
 article.project
@@ -193,7 +197,7 @@ article.project
 /* footer */
 footer {
   font-size: 12px;
-  padding: 0 6rem;
+  padding: 0 10rem;
   line-height: 6;
   color: #ffffff30;
   border-top: 1px solid #ffffff10;
@@ -270,12 +274,12 @@ section.detail .information {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  padding: 3rem 6rem 10rem;
+  padding: 3rem 10rem 10rem;
 }
 section.detail .metadata {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 12px;
   padding-bottom: 3rem;
   border-bottom: 1px solid #ffffff10;
 }
@@ -286,14 +290,15 @@ section.detail .information .info {
   gap: 6rem;
 }
 section.detail .information .info .description {
-  width: 35%;
+  width: 100%;
 }
 section.detail .information .info .tool {
   font-size: 14px;
   color: #444444;
+  display: none;
 }
 section.detail .information a.visit-site {
-  color: #fff;
+  color: #ededed;
   text-decoration: underline;
   font-size: 18px;
   font-weight: 400;
@@ -306,16 +311,16 @@ section.detail .information a.visit-site.close {
 }
 
 section.detail .metadata .date {
-  font-family: 'Geometos', 'Pretendard', sans-serif, 맑은고딕, Malgun Gothic,
-    '돋움', Dotum, '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', sans-serif;
-  font-size: 20px;
-  color: #6a6a6a;
+  font-family: 'Pretendard', sans-serif, 맑은고딕, Malgun Gothic, '돋움', Dotum,
+    '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', sans-serif;
+  font-size: 16px;
+  color: #8a8a8a;
 }
 .contents-body {
   display: flex;
   flex-direction: column;
   gap: 15rem;
-  padding: 15rem 6rem;
+  padding: 15rem 10rem;
 }
 .divider {
   width: 100%;
@@ -385,7 +390,7 @@ section.contents .contents-layout3 {
   align-items: start;
 }
 section.contents .contents-layout3 .description {
-  width: 140rem;
+  width: 100%;
   word-break: keep-all;
 }
 section.contents .contents-layout3 h2 {
@@ -393,10 +398,10 @@ section.contents .contents-layout3 h2 {
 }
 
 .other-projects {
-  padding: 3rem 6rem;
+  padding: 6rem 12rem;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 48px;
 }
 .dd-css-animation {
   top: 29%;
@@ -479,6 +484,11 @@ section.contents .contents-layout3 h2 {
     height: 56.25vw;
     background-size: contain;
   }
+  section.contents .contents-layout0 {
+    height: 56.25vw;
+    background-size: contain;
+    background-attachment: local;
+  }
 }
 
 @media (max-width: 768px) {
@@ -494,5 +504,24 @@ section.contents .contents-layout3 h2 {
   }
   section.detail .information {
     padding: 8px 16px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 20px;
+  }
+  article.main .main-contents .main-title {
+    font-size: 20px;
+  }
+  article.main .main-contents .description {
+    font-size: 16px;
+  }
+  section.contents .contents-layout3 .description {
+    width: 100%;
+    font-size: 16px;
+  }
+  .description {
+    font-size: 16px;
   }
 }
