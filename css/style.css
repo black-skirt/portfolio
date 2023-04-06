@@ -22,7 +22,7 @@ h2 {
 .description {
   color: #8a8a8a;
   font-size: 20px;
-  line-height: 140%;
+  line-height: 150%;
   font-weight: 400;
 }
 /* h3 {
@@ -89,10 +89,10 @@ article.main {
 }
 
 article.main .main-contents {
-  position: sticky;
+  position: relative;
   left: 50%;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -122,7 +122,7 @@ h2.article-title {
   color: #ffffff;
   border-bottom: 1px solid #ffffff10;
   height: 6rem;
-  min-height: 32px;
+  min-height: 48px;
 }
 
 article.project ul.project-body {
@@ -136,6 +136,9 @@ article.project ul.project-body .project-list {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+article.project ul.project-body .project-list img {
+  border: 1px solid #ffffff10;
 }
 
 article.project ul.project-body .project-list .project-title {
@@ -312,7 +315,7 @@ section.detail .metadata .date {
   display: flex;
   flex-direction: column;
   gap: 15rem;
-  padding: 10rem 6rem;
+  padding: 15rem 6rem;
 }
 .divider {
   width: 100%;
@@ -386,7 +389,7 @@ section.contents .contents-layout3 .description {
   word-break: keep-all;
 }
 section.contents .contents-layout3 h2 {
-  width: 140rem;
+  width: 100%;
 }
 
 .other-projects {
@@ -412,8 +415,37 @@ section.contents .contents-layout3 h2 {
     font-size: 0.416vw;
   }
 }
+@media (max-width: 1440px) {
+  html {
+    font-size: 0.416vw;
+  }
+  article.project ul.project-body .project-list {
+    gap: 16px;
+  }
+}
 
 @media (max-width: 1024px) {
+  h2 {
+    font-size: 22px;
+  }
+  section.detail .metadata {
+    gap: 16px;
+  }
+  section.detail .information .info .description {
+    width: 100%;
+  }
+  section.detail .information {
+    gap: 16px;
+  }
+  section.detail .hero-img {
+    height: 56.25vw;
+    background-size: contain;
+    background-position: top;
+  }
+  section.detail .information .info {
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
   article.main .main-contents .main-title {
     font-size: 32px;
   }
@@ -422,10 +454,30 @@ section.contents .contents-layout3 h2 {
   }
   article.project ul.project-body {
     grid-template-columns: repeat(1, 1fr);
-    gap: 24rem 0rem;
+    gap: 120px 0rem;
   }
   article.project {
     padding: 80px 24px;
+  }
+  section.contents .contents-layout3 {
+    gap: 16px;
+  }
+  section.contents .contents-layout3 .description {
+    width: 100%;
+    font-size: 18px;
+  }
+  .description {
+    font-size: 18px;
+  }
+  .contents-body {
+    padding: 40px 24px;
+  }
+  section.contents {
+    gap: 16px;
+  }
+  article.main {
+    height: 56.25vw;
+    background-size: contain;
   }
 }
 
@@ -435,5 +487,12 @@ section.contents .contents-layout3 h2 {
   }
   article.main .main-contents .description {
     font-size: 18px;
+  }
+  .contents-body {
+    gap: 56px;
+    padding: 24px 16px;
+  }
+  section.detail .information {
+    padding: 8px 16px 24px;
   }
 }
