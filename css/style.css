@@ -398,7 +398,7 @@ section.contents .contents-layout3 h2 {
 }
 
 .other-projects {
-  padding: 6rem 12rem;
+  padding: 6rem 10rem;
   display: flex;
   flex-direction: column;
   gap: 48px;
