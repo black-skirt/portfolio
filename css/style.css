@@ -137,9 +137,13 @@ article.project ul.project-body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 .project-list img {
   border: 1px solid #ffffff10;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .project-list .project-title {
@@ -236,6 +240,10 @@ body.artong section.detail .hero-img {
 }
 body.etpk section.detail .hero-img {
   background-image: url(../images/etpk/hero.jpg);
+}
+
+body.azure section.detail .hero-img {
+  background-image: url(../images/azure/hero.jpg);
 }
 
 /* background layout0 */
