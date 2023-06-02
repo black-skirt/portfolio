@@ -141,8 +141,8 @@ article.project ul.project-body {
   overflow: hidden;
 }
 .project-list img {
-  border: 1px solid rgba(255,255 ,255 , 0.1);
-  
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
   border-radius: 8px;
   box-sizing: border-box;
 }
@@ -209,6 +209,10 @@ footer {
 }
 
 /* 디테일 페이지별 히어로스타일 */
+body.yogerpresso section.detail .hero-img {
+  background-image: url(../images/yogerpresso/hero.jpg);
+}
+
 body.visual section.detail .hero-img {
   background-image: url(../images/visual/hero.jpg);
 }
@@ -343,7 +347,12 @@ section.contents {
   gap: 5rem;
   padding: 10rem 0;
 }
-
+/* section.contents.grid-1440 {
+  padding: 0 10rem;
+} */
+img {
+  display: block;
+}
 section.contents .contents-layout0 {
   /* width: calc(100% - 8rem); */
   height: 100vh;
@@ -352,15 +361,26 @@ section.contents .contents-layout0 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius:8px;
-  border: 1px solid rgba(255,255 ,255 , 0.1);
-}
-
-section.contents .contents-layout1 img {
   border-radius: 8px;
   box-sizing: border-box;
-  border: 1px solid rgba(255,255 ,255 , 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+section.contents .contents-layout1 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   width: 100%;
+  overflow: hidden;
+}
+section.contents .contents-layout1.yoger-icon {
+  background-color: #fff;
+  padding: 2.5% 0;
+  display: flex;
+  justify-content: center;
+}
+section.contents .contents-layout1.yoger-icon img {
+  width: 80%;
 }
 
 .contents-layout2 {
@@ -370,16 +390,15 @@ section.contents .contents-layout1 img {
   gap: 0rem 5rem;
 }
 .contents-layout2 img {
-  border: 1px solid rgba(255,255 ,255 , 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   box-sizing: border-box;
-
 }
 .contents-layout2 .img-box {
   padding-top: 75%;
   background: linear-gradient(#fffaee, #ffedd7);
   position: relative;
-  border: 1px solid rgba(255,255 ,255 , 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   box-sizing: border-box;
 }
@@ -401,7 +420,7 @@ section.contents .contents-layout1 img {
 }
 
 .contents-layout2 .img-box.night img {
-  border:none;
+  border: none;
   width: 75%;
 }
 
