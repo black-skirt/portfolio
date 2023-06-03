@@ -209,6 +209,10 @@ footer {
 }
 
 /* 디테일 페이지별 히어로스타일 */
+body.creately section.detail .hero-img {
+  background-image: url(../images/creately/hero.jpg);
+}
+
 body.yogerpresso section.detail .hero-img {
   background-image: url(../images/yogerpresso/hero.jpg);
 }
