@@ -8,8 +8,8 @@ body {
 }
 h1 {
   color: #e0e0e0;
-  font-weight: 600;
-  font-size: 32px;
+  font-weight: 500;
+  font-size: 28px;
   text-transform: capitalize;
   line-height: 1;
 }
@@ -83,10 +83,13 @@ nav ul li a.on::after {
 
 article.main {
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   position: relative;
   background-attachment: fixed;
-  background-image: url(../images/example.jpg);
+  background-image: url(../images/logo2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 article.main .main-contents {
@@ -98,7 +101,7 @@ article.main .main-contents {
   flex-direction: column;
   gap: 16px;
   /* overflow: hidden; */
-  padding: 16rem 0;
+  padding: 16rem 0 8rem;
 }
 article.main .main-contents .main-title {
   text-align: center;
