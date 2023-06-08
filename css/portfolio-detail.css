@@ -1,0 +1,400 @@
+/* 디테일 페이지별 히어로스타일 */
+body.creately section.detail .hero-img {
+  background-image: url(../images/creately/hero.jpg);
+}
+
+body.yogerpresso section.detail .hero-img {
+  background-image: url(../images/yogerpresso/hero.jpg);
+}
+
+body.visual section.detail .hero-img {
+  background-image: url(../images/visual/hero.jpg);
+}
+
+body.nene section.detail .hero-img {
+  background-image: url(../images/nene/hero.jpg);
+}
+
+body.returnal section.detail .hero-img {
+  background-image: url(../images/returnal/hero.jpg);
+}
+
+body.tomdixon section.detail .hero-img {
+  background-image: url(../images/tomdixon/hero.jpg);
+}
+body.extra section.detail .hero-img {
+  background-image: url(../images/extra/hero.jpg);
+}
+body.minthub section.detail .hero-img {
+  background-image: url(../images/minthub/hero.jpg);
+}
+body.dryducklings section.detail .hero-img {
+  background-image: url(../images/dryducklings/hero.jpg);
+}
+body.w-a section.detail .hero-img {
+  background-image: url(../images/w-a/hero.jpg);
+}
+body.artong section.detail .hero-img {
+  background-image: url(../images/artong/hero.jpg);
+}
+body.etpk section.detail .hero-img {
+  background-image: url(../images/etpk/hero.jpg);
+}
+
+body.azure section.detail .hero-img {
+  background-image: url(../images/azure/hero.jpg);
+}
+
+/* background layout0 */
+section.contents.cumulus .contents-layout0 {
+  background-image: url(../images/visual/02.jpg);
+}
+
+section.contents.azure .contents-layout0 {
+  background-image: url(../images/visual/10.jpg);
+}
+
+section.contents.extra .contents-layout0 {
+  background-image: url(../images/extra/34.jpg);
+}
+section.contents.dryducklings .contents-layout0 {
+  background-image: url(../images/dryducklings/19.jpg);
+}
+section.contents.etpk .contents-layout0 {
+  background-image: url(../images/etpk/16.jpg);
+}
+
+/* 디테일 페이지 */
+section.detail {
+  padding: 0;
+}
+section.detail .hero-img {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url(../images/example16-9.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.detail .information {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem 10rem 10rem;
+}
+section.detail .metadata {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #ffffff10;
+}
+
+section.detail .information .info {
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+}
+section.detail .information .info .description {
+  width: 100%;
+}
+section.detail .information .info .tool {
+  font-size: 14px;
+  color: #444444;
+  display: none;
+}
+section.detail .information a.visit-site {
+  color: #ededed;
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+section.detail .information a.visit-site.close {
+  color: #444444;
+  text-decoration: line-through;
+}
+
+section.detail .metadata .date {
+  font-family: 'Pretendard', sans-serif, 맑은고딕, Malgun Gothic, '돋움', Dotum,
+    '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', sans-serif;
+  font-size: 16px;
+  color: #8a8a8a;
+}
+.contents-body {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  padding: 15rem 10rem;
+}
+.divider {
+  width: 100%;
+  height: 1px;
+  background: #ffffff10;
+}
+
+section.contents {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 10rem 0;
+}
+/* section.contents.grid-1440 {
+  padding: 0 10rem;
+} */
+img {
+  display: block;
+}
+section.contents .contents-layout0 {
+  /* width: calc(100% - 8rem); */
+  height: 100vh;
+  background-attachment: fixed;
+  background-image: url(../images/example16-9.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+section.contents .contents-layout1 {
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  overflow: hidden;
+}
+section.contents .contents-layout1.yoger-icon {
+  background-color: #fff;
+  padding: 2.5% 0;
+  display: flex;
+  justify-content: center;
+}
+section.contents .contents-layout1.yoger-icon img {
+  width: 80%;
+}
+
+.contents-layout2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(3, minmax(100px, auto)); */
+  gap: 0rem 5rem;
+}
+.contents-layout2 img {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.contents-layout2 .img-box {
+  padding-top: 75%;
+  background: linear-gradient(#fffaee, #ffedd7);
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.contents-layout2 .img-box img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 38%;
+}
+
+.contents-layout2 .img-box.hi-dd img {
+  width: 58%;
+}
+
+.contents-layout2 .img-box.night {
+  background: #24154e;
+}
+
+.contents-layout2 .img-box.night img {
+  border: none;
+  width: 75%;
+}
+
+section.contents .contents-layout3 {
+  /* padding: 6rem 0; */
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: left;
+  align-items: start;
+}
+section.contents .contents-layout3 .description {
+  width: 100%;
+  word-break: keep-all;
+}
+section.contents .contents-layout3 h2 {
+  width: 100%;
+}
+
+.other-projects {
+  padding: 6rem 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.dd-css-animation {
+  top: 29%;
+  left: 32%;
+
+  transform: scale(1.4);
+  position: absolute;
+  animation: x 5s infinite;
+  -webkit-animation: x 5s infinite;
+  -moz-animation: x 5s infinite;
+  -o-animation: x 5s infinite;
+}
+
+@media (max-width: 1024px) {
+  section.detail .hero-img {
+    height: 56.25vw;
+    background-size: contain;
+    background-position: top;
+  }
+
+  section.detail .information {
+    gap: 16px;
+  }
+
+  section.detail .metadata {
+    gap: 16px;
+  }
+
+  section.detail .information .info .description {
+    width: 100%;
+  }
+
+  section.detail .information .info {
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
+  section.contents .contents-layout3 {
+    gap: 24px;
+  }
+  section.contents .contents-layout3 .description {
+    width: 100%;
+    font-size: 18px;
+  }
+  .contents-body {
+    padding: 40px 24px;
+  }
+  section.contents {
+    gap: 24px;
+  }
+  section.contents .contents-layout0 {
+    height: 56.25vw;
+    background-size: cover;
+    background-attachment: local;
+  }
+
+  .contents-body {
+    gap: 56px;
+    padding: 16px 24px;
+  }
+
+  section.detail .information {
+    padding: 24px 24px;
+  }
+
+  .contents-layout2 {
+    gap: 0rem 24px;
+  }
+
+  .other-projects {
+    padding: 48px 24px;
+    gap: 24px;
+  }
+}
+@media (max-width: 768px) {
+  section.contents .contents-layout3 .description {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  body.creately section.detail .hero-img {
+    height: 64vh;
+    background-size: cover;
+    background-position-y: top;
+    background-attachment: local;
+  }
+}
+
+@media (max-width: 480px) {
+  section.contents .contents-layout3 {
+    gap: 16px;
+  }
+  section.contents .contents-layout0 {
+    border-radius: 4px;
+  }
+  section.detail .information {
+    padding: 24px 16px;
+  }
+
+  section.contents {
+    gap: 16px;
+  }
+  .contents-layout2 {
+    gap: 16px;
+  }
+  .contents-body {
+    padding: 16px;
+  }
+  section.contents .contents-layout1,
+  .contents-layout2 img {
+    border-radius: 4px;
+  }
+  .project-list h3 {
+    font-size: 18px;
+  }
+  .other-projects {
+    gap: 16px;
+    padding: 10rem 16px;
+  }
+  .other-projects .project-list {
+    position: relative;
+    padding: 32px 0 24px;
+    border-bottom: 1px solid #ffffff10;
+  }
+  .other-projects .project-list::after {
+    content: '';
+    position: absolute;
+    color: #8a8a8a;
+    top: 2px;
+    left: 0;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .other-projects .project-list:nth-child(1)::after {
+    content: '이전 프로젝트';
+  }
+  .other-projects .project-list:nth-child(2)::after {
+    content: '다음 프로젝트';
+  }
+  .other-projects .contents-layout2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .other-projects img,
+  .other-projects .description {
+    display: none;
+  }
+  .description br {
+    display: none;
+  }
+  .project-list .project-date {
+    display: none;
+  }
+
+  .other-projects .project-list h3 {
+    font-size: 24px;
+  }
+}

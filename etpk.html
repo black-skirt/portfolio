@@ -94,11 +94,11 @@
     />
     <meta name="theme-color" content="#ffffff" />
 
-    <!-- css 영역 -->
+    <!-- 전체공통 -->
     <link rel="stylesheet" type="text/css" href="css/common.css" />
-    <!-- 전체공통 -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <!-- 전체공통 -->
+    <!-- 상세페이지 css -->
+
+    <link rel="stylesheet" type="text/css" href="css/portfolio-detail.css" />
 
     <!-- script -->
     <script src="js/jquery.min.js"></script>
@@ -112,11 +112,16 @@
       /></a>
       <ul>
         <li>
-          <a href="index.html" class="on">home</a>
+          <a href="index.html">home</a>
         </li>
 
         <li>
-          <a href="">resume</a>
+          <a
+            href="https://my.surfit.io/w/780976345"
+            title="서핏 커리어"
+            target="_blank"
+            >resume</a
+          >
         </li>
       </ul>
     </nav>
@@ -389,30 +394,41 @@
           </div>
         </article>
       </section>
-
-      <div class="divider"></div>
     </div>
     <section class="other-projects">
-      <h2 class="article-title">other proejcts</h2>
+      <h2 class="article-title">other projects</h2>
       <article class="contents-layout2">
-        <a href="nene.html" class="project-list">
-          <img src="images/nene/hero.jpg" alt="nene chicken" />
+        <a href="azure.html" class="project-list">
+          <img src="images/azure/hero.jpg" alt="azure swap design system" />
           <div class="project-title">
-            <h3>Nene Chicken</h3>
-            <div class="project-date">2021.02</div>
+            <h3>Azure Swap Design System</h3>
+            <div class="project-date">2022.12</div>
           </div>
           <div class="description">
-            많은 가맹점을 가지고 있는 네네치킨은 우리에게 보다 친숙한 이미지를
-            가지고 있습니다. 이러한 기업 바탕으로 더욱 편안한 사용자 경험을 위해
-            네네치킨 웹사이트를 리뉴얼하였습니다.
+            탈중앙화 거래소(Decentralized Exchange)서비스의 초기 디자인 시스템을
+            구축했습니다.
           </div>
           <ul class="chip-body">
             <li class="chip-contents">Web</li>
-            <li class="chip-contents">Redesign</li>
+            <li class="chip-contents">Mobile</li>
+            <li class="chip-contents">Brand Identity</li>
           </ul>
         </a>
-        <a href="artong.html">
-          <img src="images/artong/hero.jpg" alt="next" />
+        <a href="artong.html" class="project-list">
+          <img src="images/artong/hero.jpg" alt="Artong" />
+          <div class="project-title">
+            <h3>Artong</h3>
+            <div class="project-date">2022.09</div>
+          </div>
+          <div class="description">
+            많은 사람들이 자유롭게 창작이 참여하도록 설계된 스타트업 NFT마켓
+            서비스입니다.
+          </div>
+          <ul class="chip-body animatedParent" data-sequence="500">
+            <li class="chip-contents">Web</li>
+            <li class="chip-contents">Mobile</li>
+            <li class="chip-contents">Brand Identity</li>
+          </ul>
         </a>
       </article>
     </section>
