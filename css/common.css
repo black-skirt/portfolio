@@ -25,6 +25,7 @@ Version : 1.1
   font-style: normal;
 }
 
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css');
 /* **************************************** *
  * Common Style
  * **************************************** */
@@ -245,6 +246,7 @@ nav ul li a {
   font-family: 'Geometos', 'Pretendard', sans-serif, 맑은고딕, Malgun Gothic,
     '돋움', Dotum, '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', sans-serif;
   color: #8a8a8a;
+  transition: all 0.3s;
 }
 
 nav ul li a.on {
@@ -253,6 +255,7 @@ nav ul li a.on {
 }
 nav ul li a:hover {
   color: #ededed;
+  transition: all 0.3s;
 }
 
 nav ul li a.on::after {
@@ -302,12 +305,6 @@ article.project
   display: flex;
   flex-direction: column;
   gap: 16px;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-.project-list img {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
   box-sizing: border-box;
 }
 
