@@ -73,7 +73,6 @@ article.project
 .project-list p.img-box {
   position: relative;
   padding-top: 56.25%;
-  overflow: auto;
 }
 
 .project-list img {
@@ -88,7 +87,7 @@ article.project
 }
 
 .project-list img:hover {
-  top: -24px;
+  top: -8px;
   transition: all 0.3s;
 }
 

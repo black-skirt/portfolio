@@ -106,10 +106,36 @@ section.detail .information .info .tool {
 }
 section.detail .information a.visit-site {
   color: #ededed;
-  text-decoration: underline;
   font-size: 18px;
   font-weight: 400;
   text-transform: capitalize;
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+  opacity: 0.8;
+  transition: all 0.6s;
+  text-decoration: underline;
+}
+section.detail .information a.visit-site.active::after {
+  content: url(../images/2.svg);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  transition: all 0.6s;
+  opacity: 0.8;
+}
+section.detail .information a.visit-site.active:hover::after {
+  right: -38px;
+  transform: translateY(-50%) rotate(180deg);
+  transition: all 0.6s;
+  opacity: 1;
+}
+section.detail .information a.visit-site.active:hover {
+  transition: all 0.6s;
+  opacity: 1;
 }
 
 section.detail .information a.visit-site.close {

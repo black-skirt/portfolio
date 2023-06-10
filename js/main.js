@@ -139,12 +139,12 @@
 $(document).ready(function () {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 800) {
-      $('#cntTop').addClass('on');
+      $('#header-container').addClass('on');
     } else {
-      $('#cntTop').removeClass('on');
+      $('#header-container').removeClass('on');
     }
   });
-  // $('#cntTop').click(function () {
+  // $('#header-container').click(function () {
   //   $('html, body').animate({ scrollTop: 0 }, 400);
   //   return false;
   // });
