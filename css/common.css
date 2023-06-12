@@ -161,19 +161,6 @@ img {
 }
 
 /* TOP */
-.header-container-wrap {
-  position: fixed;
-  right: 20px;
-  bottom: 17%;
-  z-index: 100;
-}
-/* .header-container-wrap #header-container {
-} */
-.header-container-wrap #header-container:hover,
-.header-container-wrap #header-container:focus,
-.header-container-wrap #header-container:active {
-  opacity: 0.66;
-}
 
 /* **************************************** *
   * Common css
@@ -219,17 +206,42 @@ h2 {
  Header
  * **************************************** */
 
-nav {
+.header {
   position: fixed;
+  top: 0;
   z-index: 1;
   width: 100%;
-  top: 0px;
-  left: 0px;
+  backdrop-filter: blur(8px);
+}
+
+.progress-container {
+  width: 100%;
+  height: 2px;
+}
+
+.progress-container .progress-bar {
+  width: 0;
+  height: 1px;
+  background: #ededed;
+  mix-blend-mode: difference;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #1c1c1c;
+  /* border-bottom: 1px solid #1c1c1c; */
   padding: 2rem 10rem;
-  mix-blend-mode: screen;
   transition: all 0.4s;
 }
 
@@ -238,7 +250,6 @@ nav#header-container.on {
   mix-blend-mode: normal;
   transition: all 0.4s;
   background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(8px);
 }
 nav ul {
   display: flex;

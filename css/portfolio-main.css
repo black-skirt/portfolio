@@ -1,3 +1,16 @@
+.progress-container {
+  width: 100%;
+  height: 2px;
+  opacity: 0;
+}
+
+.progress-container .progress-bar {
+  width: 0;
+  height: 1px;
+  background: #ededed;
+  mix-blend-mode: difference;
+}
+
 article.main {
   width: 100%;
   height: 100vh;
@@ -86,7 +99,7 @@ article.project
   transition: all 0.3s;
 }
 
-.project-list img:hover {
+.project-list:hover img {
   top: -8px;
   transition: all 0.3s;
 }
