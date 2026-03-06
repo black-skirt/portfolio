@@ -6,8 +6,8 @@
 
 .progress-container .progress-bar {
   width: 0;
-  height: 1px;
-  background: #ededed;
+  height: 2px;
+  background: var(--netral-color-400);
   mix-blend-mode: difference;
 }
 
@@ -47,7 +47,9 @@ article.main .main-contents .description {
 
 /* project */
 article.project {
-  padding: 15rem 10rem;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 15rem 0rem;
   display: flex;
   flex-direction: column;
   gap: 5rem;
@@ -68,7 +70,7 @@ article.project ul.project-body {
 
 .chip-body .chip-contents {
   font-size: 14px;
-  color: #525252;
+  color: var(--netral-color-400);
   text-transform: capitalize;
 }
 

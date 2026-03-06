@@ -9,7 +9,17 @@ Version : 1.1
  * Color
  * **************************************** */
 :root {
-  --main-bg-color: pink;
+  --netral-color-100: #0c0c0d;
+  --netral-color-150: #131315;
+  --netral-color-200: #19191b;
+  --netral-color-300: #303036;
+  --netral-color-400: #848490;
+  --netral-color-500: #e7e7e9;
+  --netral-color-600: #ebebef;
+  --netral-black: #000000;
+  --netral-white: #ffffff;
+  --netral-white-opa10: rgba(255, 255, 255, 0.1);
+  --netral-black-opa10: rgba(0, 0, 0, 0.1);
 }
 /* **************************************** *
  * FONT
@@ -17,7 +27,8 @@ Version : 1.1
 @font-face {
   font-family: 'Geometos';
   src: url('fonts/Geometos.eot');
-  src: url('fonts/Geometos.eot?#iefix') format('embedded-opentype'),
+  src:
+    url('fonts/Geometos.eot?#iefix') format('embedded-opentype'),
     url('fonts/Geometos.woff2') format('woff2'),
     url('fonts/Geometos.woff') format('woff'),
     url('fonts/Geometos.ttf') format('truetype');
@@ -36,10 +47,22 @@ Version : 1.1
 }
 
 * {
-  font-family: 'Pretendard Variable', Pretendard, -apple-system,
-    BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
-    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  font-family:
+    'Pretendard Variable',
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    'Helvetica Neue',
+    'Segoe UI',
+    'Apple SD Gothic Neo',
+    'Noto Sans KR',
+    'Malgun Gothic',
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    sans-serif;
   box-sizing: border-box;
   /* -webkit-transition: all 0.6s ease-out;
   -o-transition: all 0.6s ease-out;
@@ -73,7 +96,7 @@ td {
   margin: 0;
   /* word-wrap: break-word; */
   word-break: keep-all;
-  color: #2b2b2b;
+  color: var(--netral-color-200);
 }
 h1,
 h2,
@@ -82,10 +105,22 @@ h4,
 h5,
 h6,
 strong {
-  font-family: 'Pretendard Variable', Pretendard, -apple-system,
-    BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
-    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  font-family:
+    'Pretendard Variable',
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    'Helvetica Neue',
+    'Segoe UI',
+    'Apple SD Gothic Neo',
+    'Noto Sans KR',
+    'Malgun Gothic',
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    sans-serif;
 }
 a {
   text-decoration: none;
@@ -174,30 +209,63 @@ img {
 html {
   font-size: 8px;
   /* root-font-size */
-  background: #0b0b0b;
+  background: var(--netral-color-150);
 }
 body {
   position: relative;
 }
 h1 {
-  color: #e0e0e0;
+  color: var(--netral-color-600);
   font-weight: 500;
   font-size: 28px;
   text-transform: capitalize;
   line-height: 1;
 }
 h2 {
-  font-family: 'Pretendard Variable', Pretendard, -apple-system,
-    BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
-    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  font-family:
+    'Pretendard Variable',
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    'Helvetica Neue',
+    'Segoe UI',
+    'Apple SD Gothic Neo',
+    'Noto Sans KR',
+    'Malgun Gothic',
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    sans-serif;
   font-size: 24px;
-  color: #ededed;
+  color: var(--netral-color-600);
+  font-weight: 500;
+}
+h3 {
+  font-family:
+    'Pretendard Variable',
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    'Helvetica Neue',
+    'Segoe UI',
+    'Apple SD Gothic Neo',
+    'Noto Sans KR',
+    'Malgun Gothic',
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    sans-serif;
+  font-size: 20px;
+  color: var(--netral-color-600);
   font-weight: 500;
 }
 .description {
-  color: #8a8a8a;
-  font-size: 20px;
+  color: var(--netral-color-400);
+  font-size: 18px;
   line-height: 150%;
   font-weight: 400;
 }
@@ -222,7 +290,7 @@ h2 {
 .progress-container .progress-bar {
   width: 0;
   height: 1px;
-  background: #ededed;
+  background: var(--netral-color-600);
   mix-blend-mode: difference;
 }
 
@@ -240,13 +308,14 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  /* border-bottom: 1px solid #1c1c1c; */
+  background: linear-gradient(var(--netral-black-opa10));
+  border-bottom: 1px solid var(--netral-white-opa10);
   padding: 2rem 10rem;
   transition: all 0.4s;
 }
 
 nav#header-container.on {
-  background: #0b0b0b;
+  background: var(--netral-color-100);
   mix-blend-mode: normal;
   transition: all 0.4s;
   background: rgba(0, 0, 0, 0.6);
@@ -261,18 +330,27 @@ nav ul {
 }
 
 nav ul li a {
-  font-family: 'Geometos', 'Pretendard', sans-serif, 맑은고딕, Malgun Gothic,
-    '돋움', Dotum, '애플 SD 산돌고딕 Neo', 'Apple SD Gothic Neo', sans-serif;
-  color: #8a8a8a;
+  font-family:
+    'Geometos',
+    'Pretendard',
+    sans-serif,
+    맑은고딕,
+    Malgun Gothic,
+    '돋움',
+    Dotum,
+    '애플 SD 산돌고딕 Neo',
+    'Apple SD Gothic Neo',
+    sans-serif;
+  color: var(--netral-color-500);
   transition: all 0.3s;
 }
 
 nav ul li a.on {
-  color: #ededed;
+  color: var(--netral-color-600);
   position: relative;
 }
 nav ul li a:hover {
-  color: #ededed;
+  color: var(--netral-color-600);
   transition: all 0.3s;
 }
 
@@ -283,7 +361,7 @@ nav ul li a.on::after {
   left: 50%;
   width: 4px;
   height: 4px;
-  background: #ededed;
+  background: var(--netral-color-600);
   transform: translate(-50%, 0);
   border-radius: 999px;
 }
@@ -291,12 +369,25 @@ nav ul li a.on::after {
 h2.article-title {
   font-size: 28px;
 
-  font-family: 'Geometos', 'Pretendard Variable', Pretendard, -apple-system,
-    BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
-    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
-  color: #ffffff;
-  border-bottom: 1px solid #ffffff10;
+  font-family:
+    'Geometos',
+    'Pretendard Variable',
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    'Helvetica Neue',
+    'Segoe UI',
+    'Apple SD Gothic Neo',
+    'Noto Sans KR',
+    'Malgun Gothic',
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    sans-serif;
+  color: var(--netral-white);
+  border-bottom: 1px solid var(--netral-white-opa10);
   height: 6rem;
   min-height: 48px;
 }
@@ -308,7 +399,7 @@ h2.article-title {
 }
 .chip-body .chip-contents {
   font-size: 14px;
-  color: #525252;
+  color: var(--netral-color-300);
   text-transform: capitalize;
 }
 article.project
@@ -338,18 +429,18 @@ article.project
 }
 .project-list h3 {
   font-size: 24px;
-  color: #e8e8e8;
+  color: var(--netral-color-600);
   font-weight: 500;
 }
 .project-list .project-date {
   font-size: 14px;
-  color: #444444;
+  color: var(--netral-color-400);
 }
 
 .project-list .description {
   font-size: 16px;
   font-weight: 400;
-  color: #8a8a8a;
+  color: var(--netral-color-400);
   word-break: keep-all;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -363,16 +454,24 @@ article.project
  * **************************************** */
 
 footer {
+  max-width: 1280px;
+  margin: 0 auto;
   font-size: 14px;
-  padding: 0 10rem;
+  padding: 0rem;
   line-height: 6;
+
   color: #ffffff30;
-  border-top: 1px solid #ffffff10;
+  border-top: 1px solid var(--netral-white-opa10);
 }
 
 /* **************************************** *
  * Tablet
  * **************************************** */
+@media (max-width: 1340px) {
+  footer {
+    padding: 0 24px;
+  }
+}
 
 @media (max-width: 1024px) {
   h2 {
